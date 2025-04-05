@@ -1,8 +1,18 @@
 :root {
-    --primary-color: #131218;
+    --primary-color: #7d6ea5;
     --text-color: #271c27;
-    --text-color-lighter: #382938;
+    --text-color-lighter: #523a52;
     --secondary-color:  #daac5e;
   --white: #FFFFFF;
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    border-bottom: var(--secondary-color) 6px solid;
+  }
+
+  .header__logo {
+    margin-right: auto;
   }
   
