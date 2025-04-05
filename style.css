@@ -8,10 +8,10 @@
   
   .header {
     background-color: var(--primary-color);
-    padding: 10px 0;
+    padding: 20px 0;
     border-bottom: var(--secondary-color) 6px solid;
   }
-  
+
   .header__logo {
     margin-right: auto;
   }
