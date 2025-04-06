@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Friends - The one From the Fans">
-    <title>Friends: The One From the Fans</title>
+    <meta name="description" content="Friends: The One from the Fans">
+    <title>Friends: The One from the Fans</title>
 
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-
     <header class="header">
-        <img src="images/logo.png" style="height:50%; width:50%">
             <nav class="header__nav">
-                <a class="header__link" href="#">Main Cast</a>
-                <a class="header__link" href="#">Recurring Characters</a>
-                <a class="header__link" href="#">Iconic Scenes</a>
-                <a class="header__link" href="#">Matthew Perry Tribute</a>
+                <a class="header__logo" href="index.html"><img src="images/logo.png" style="height:90px; width:480px"></a>
+                <a class="header__link" href="cast.html">Main Cast</a>
+                <a class="header__link" href="characters.html">Recurring Characters</a>
+                <a class="header__link" href="scenes.html">Iconic Scenes</a>
+                <a class="header__link" href="matthewperry.html">Matthew Perry Tribute</a>
             </nav>
-
     </header>
 
     <main>
-        <section class="intro">
-            <h1>Friends: The Ones From the Fans</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error magnam quis asperiores, ducimus eius. Aliquam ea laborum suscipit vitae vel adipisci perspiciatis eveniet quibusdam minima modi maxime, quas nam!</p>
+        <section class="page">
+            <div class="container">
+                <h1 class="container__title">Friends: The One from the Fans</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio error magnam quis asperiores, ducimus eius. Aliquam ea laborum suscipit vitae vel adipisci perspiciatis eveniet quibusdam minima modi maxime, quas nam!</p>
+            </div>
         </section>
     </main>
 
-    <footer>
-        &copy; Friends: The One From the Fans - Group 1 <span id="year"></span>
+    <footer class="footer">
+        &copy; Friends: The One from the Fans by Group 1 MMC5277 <span id="year"></span>
     </footer>
+
     <script>
         document.getElementById('year').textContent = new Date().getFullYear()
     </script>
