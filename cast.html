@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Friends Cast">
-    <title>Friends Cast</title>
-
+    <meta name="description" content="Friends: The One from the Fans">
+    <title>Friends: The One from the Fans</title>
+    
     <link rel="stylesheet" href="style.css">
-
+    
 </head>
 <body>
     <header class="header">
@@ -20,48 +20,52 @@
             </nav>
     </header>
 
-    <main>
-        <section class="intro">
-            <h1>Friends Cast</h1>
-            <p>Lorem ipsum dolvgitor sit amet consectetur adipisicing elit. Odio error magnam quis asperiores, ducimus eius. Aliquam ea laborum suscipit vitae vel adipisci perspiciatis eveniet quibusdam minima modi maxime, quas nam!</p>
-        </section>
-            <h2>Cast Members</h2>
-            <div class="cast-list">
-                <div class="cast-member">
-                    <img src="images/RachelGreen.png" alt="Jennifer Aniston as Rachel Green" width="200" height="300">
-                    <h3>Jennifer Aniston</h3>
-                    <p>Rachel Green</p>
-                </div>
-                <div class="cast-member">
-                    <img src="images/MonicaGeller.png" alt="Courteney Cox as Monica Geller">
-                    <h3>Courteney Cox</h3>
-                    <p>Monica Geller</p>
-                </div>
-                <div class="cast-member">
-                    <img src="images/PhoebeBuffay.png" alt="Lisa Kudrow as Phoebe Buffay">
-                    <h3>Lisa Kudrow</h3>
-                    <p>Phoebe Buffay</p>
-                </div>
-                <div class="cast-member">
-                    <img src="images/JoeyTribiani.png" alt="Matt LeBlanc as Joey Tribbiani">
-                    <h3>Matt LeBlanc</h3>
-                    <p>Joey Tribbiani</p>
-                </div>
-                <div class="cast-member">
-                    <img src="images/ChandlerBing.png" alt="Matthew Perry as Chandler Bing">
-                    <h3>Matthew Perry</h3>
-                    <p>Chandler Bing</p>
-                </div>
-                <div class="cast-member">
-                    <img src="images/RossGeller.png" alt="David Schwimmer as Ross Geller">
-                    <h3>David Schwimmer</h3>
-                    <p>Ross Geller</p>
-                </div>
-    </main>
+    <main> 
+        <section class="page"> 
+            <div class="container"> 
+                <h1 class="container__title"> Cast Members </h1> 
+            <div class="cast-member"> 
+                <img src="images/RachelGreen.png" alt="Jennifer Aniston as Rachel Green" width="200" height="300"> 
+                <h2 class="container__subtitle">Jennifer Aniston</h2> 
+                <p>Rachel Green</p> 
+            </div> 
+    
+            <div class="cast-member"> 
+                <img src="images/MonicaGeller.png" alt="Courteney Cox as Monica Geller"> 
+                <h2 class="container__subtitle">Courteney Cox</h2> 
+                <p>Monica Geller</p> 
+            </div> 
+    
+            <div class="cast-member"> 
+                <img src="images/PhoebeBuffay.png" alt="Lisa Kudrow as Phoebe Buffay"> 
+                <h2 class="container__subtitle">Lisa Kudrow</h2> 
+                <p>Phoebe Buffay</p> 
+            </div> 
+    
+            <div class="cast-member"> 
+                <img src="images/JoeyTribiani.png" alt="Matt LeBlanc as Joey Tribbiani"> 
+                <h2 class="container__subtitle">Matt LeBlanc</h2> 
+                <p>Joey Tribbiani</p> 
+            </div> 
+    
+            <div class="cast-member"> 
+                <img src="images/ChandlerBing.png" alt="Matthew Perry as Chandler Bing"> 
+                <h2 class="container__subtitle">Matthew Perry</h2> 
+                <p>Chandler Bing</p> 
+            </div> 
+    
+            <div class="cast-member"> 
+                <img src="images/RossGeller.png" alt="David Schwimmer as Ross Geller"> 
+                <h2 class="container__subtitle">David Schwimmer</h2> 
+                <p>Ross Geller</p> 
+            </div> 
+    
+    </main> 
 
-    <footer>
-        &copy; Friends: The One From the Fans - Group 1 <span id="year"></span>
+    <footer class="footer">
+        &copy; Friends: The One from the Fans by Group 1 MMC5277 <span id="year"></span>
     </footer>
+
     <script>
         document.getElementById('year').textContent = new Date().getFullYear()
     </script>
