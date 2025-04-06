@@ -1,0 +1,69 @@
+:root {
+    --primary-color: #7d6ea5;
+    --text-color: #417660;
+    --text-color-lighter: #699482;
+    --secondary-color:  #daac5e;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 20px 5px;
+    border-bottom: var(--secondary-color) 6px solid;
+  }
+
+  .header__logo {
+    margin-right: auto;
+  }
+
+  .header__link {
+    font-size: 16px;
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  .header__logo:hover,
+  .header__link:hover {
+    text-decoration: underline;
+  }
+
+  .header__nav {
+    display: flex;
+    margin-top: auto;
+  }
+
+  .header__link:not(:first-of-type){
+    margin-left: 24px;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Friends-FanPage-MMC277/images/background.jpg);
+    background-position: center;
+    min-height: 100vh;
+    font-family: ;
+    margin: 0;
+    font-size: 24px;
+    color: var(--text-color);
+  
+  }
+
+  .container {
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    height: 90vh;
+    width: 90vw;
+    padding: 10px;
+    margin: 10px auto;
+  }
+
+  .footer {
+    background-color: var(--primary-color);
+    border-top: var(--secondary-color) 6px solid;
+    text-align: center;
+    padding: 5px;
+    color: white;
+  }
+
