@@ -43,7 +43,7 @@
     background-image: url(/Friends-FanPage-MMC277/images/background.jpg);
     background-position: center;
     min-height: 100vh;
-    font-family:  ;
+    font-family: 'Fredoka', sans-serif; /* Added font-family Fredoka, but we can change this! */
     margin: 0;
     font-size: 24px;
     color: var(--text-color);
