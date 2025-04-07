@@ -43,7 +43,7 @@
     background-image: url(/Friends-FanPage-MMC277/images/background.jpg);
     background-position: center;
     min-height: 100vh;
-    font-family: ;
+    font-family:  ;
     margin: 0;
     font-size: 24px;
     color: var(--text-color);
@@ -68,7 +68,7 @@
     color: white;
   }
 
-  .cast-member:hover {
+  .cast-member:hover { /* Added hover effect to cast member cards */
     transform: scale(1.02);
     transition: transform 0.3s ease;
   }
