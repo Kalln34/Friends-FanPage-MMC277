@@ -79,9 +79,9 @@
 
   .cast-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    padding: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -93,6 +93,7 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    max-width: 100%;
 
   }
 
@@ -107,13 +108,13 @@
   }
 
   .cast-member h2 {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0.5rem 0 0.25rem;
     color: var(--text-color);
   }
   
   .cast-member p {
-    font-size: 12px;
+    font-size: 18px;
     margin: 0.25rem 0 0.25rem;
     color: var(--text-color);
     line-height: 1.5;
