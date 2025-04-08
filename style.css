@@ -1,74 +1,179 @@
+*{
+  margin: 0px; padding: 0px; border: 0px 
+}
+
 :root {
-    --primary-color: #7d6ea5;
-    --text-color: #417660;
-    --text-color-lighter: #699482;
-    --secondary-color:  #daac5e;
-  }
+  --primary-color: #7d6ea5;
+  --text-style: 'Fredoka', sans-serif;
+  --text-color: #417660;
+  --text-color-lighter: #699482;
+  --secondary-color:  #daac5e;
+}
   
-  .header {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--primary-color);
-    padding: 20px 5px;
-    border-bottom: var(--secondary-color) 6px solid;
-  }
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  padding: 20px 5px;
+  border-bottom: var(--secondary-color) 6px solid;
+}
 
-  .header__logo {
-    margin-right: auto;
-  }
+.header__logo {
+  margin-right: auto;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
-  .header__link {
-    font-size: 16px;
-    color: var(--secondary-color);
-    text-decoration: none;
+.header__logo img {
+  transition: all 0.5s ease;
+}
+
+.header__logo:hover img {
+  animation: pivot 2s ease-in-out infinite;
+}
+
+@keyframes pivot {
+  0%, 100% {
+    transform: translateX(0) rotate(0);
   }
+  50% {
+      transform: translateX(15px);
+  }
+  75% {
+    transform: translateX(15px) rotate(-5deg)
+  }
+  100% {
+      transform: translateX(15px) rotate(-5deg); 
+  }
+}
+
+.header__link {
+  font-size: 20px;
+  font-family: var(--text-style);
+  color: var(--secondary-color);
+  text-decoration: none;
+}
   
-  .header__logo:hover,
-  .header__link:hover {
-    text-decoration: underline;
-  }
+.header__link:hover {
+  text-decoration: underline;
+}
 
-  .header__nav {
-    display: flex;
-    margin-top: auto;
-  }
+.header__nav {
+  display: flex;
+  margin-top: auto;
+  column-gap: 10px
+}
 
-  .header__link:not(:first-of-type){
-    margin-left: 24px;
-  }
+.header__link:not(:first-of-type) {
+  margin-left: 16px;
+}
   
-  .page {
-    display: flex;
-    flex-direction: column;
-    background-image: url(/Friends-FanPage-MMC277/images/background.jpg);
-    background-position: center;
-    min-height: 100vh;
-    font-family: 'Fredoka', sans-serif; /* Added font-family Fredoka, but we can change this! */
-    margin: 0;
-    font-size: 24px;
-    color: var(--text-color);
-  
-  }
+.page {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/Friends-FanPage-MMC277/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: var(--text-style);
+  margin: 0px;
+  font-size: 24px;
+  color: var(--text-color);
+}
 
-  .container {
-    background-color: rgba(255, 255, 255, 0.8);
-    height: 80vh;
-    width: 80vw;
-    padding: 20px;
-    margin: 10px auto;
-    overflow-y: auto; 
-  }
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-height: 80vh;
+  max-width: 80vw;
+  padding: 10px 20px;
+  border-radius: 5px 5px;
+  margin: 30px auto;
+  overflow-y: auto; 
+}
 
-  .footer {
-    background-color: var(--primary-color);
-    border-top: var(--secondary-color) 6px solid;
-    text-align: center;
-    padding: 5px;
-    color: white;
-  }
+.container__title { 
+  font-size: 40px; 
+  margin: 5px 0 2px;   
+  line-height: 1.2;
+}
 
-  .cast-member:hover { /* Added hover effect to cast member cards */
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-  }
+.container__subtitle {  
+  font-size: 30px;    
+  margin: 5px 0 2px;  
+  line-height: 1.3;
+}
+
+.image-center,
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.image-center img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color); 
+  color: white;
+  font-family: var(--text-style);
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 10px solid var(--secondary-color);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.characters {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  overflow: hidden; 
+}
+
+.char-images{
+  Float: left;
+  width: 200px; 
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.content{
+  float: right;
+  overflow: hidden;
+  margin-left: 200px;
+}
+
+.description,
+.mem-scene {
+  margin-bottom: 10px;
+}
+
+.mem-scene {
+font-style: italic;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  border-top: var(--secondary-color) 6px solid;
+  text-align: center;
+  font-family: var(--text-style);
+  padding: 5px;
+  color: white;
+}
+
+.cast-member:hover { 
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
 
