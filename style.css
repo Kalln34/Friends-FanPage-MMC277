@@ -72,6 +72,11 @@
     transition: transform 0.3s ease;
   }
   
+  .cast-member img:hover { /* Added hover effect to cast member images */
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    filter: grayscale(0%); /* Removed grayscale effect on hover */
+  }
 
   .cast-grid {
     display: grid;
