@@ -109,3 +109,16 @@
     color: var(--text-color);
     line-height: 1.5;
   }
+
+
+  @media  screen and (min-width: 400px) {
+    .header__nav {
+      flex-direction: column;
+      text-align: center;
+      margin-right: auto;
+    }
+
+    .header__logo {
+      flex-direction: column;
+      text-align: center;
+    }
