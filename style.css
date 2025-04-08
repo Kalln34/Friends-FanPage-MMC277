@@ -77,12 +77,12 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    padding: 2rem
+    padding: 3rem
   }
 
   .cast-member {
     background-color: var(--text-color-lighter);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
