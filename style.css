@@ -116,3 +116,7 @@
     color: var(--text-color);
     line-height: 1.5;
   }
+
+  .cast-rachel {
+    background-color:  pink;
+  }
