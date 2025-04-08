@@ -79,3 +79,12 @@
     gap: 20px;
     padding: 2rem
   }
+
+  .cast-member {
+    background-color: var(--text-color-lighter);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
