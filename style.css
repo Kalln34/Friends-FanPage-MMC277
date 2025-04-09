@@ -70,7 +70,7 @@
 .page {
   display: flex;
   flex-direction: column;
-  background-image: url(/Friends-FanPage-MMC277/images/background.jpg);
+  background-image: url(images/background.jpg);
   background-position: center;
   background-size: cover;
   min-height: 100vh;
@@ -255,9 +255,6 @@ font-style: italic;
   }
 
   
-
-
-
 
   @media  screen and (min-width: 400px) {
   
