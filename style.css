@@ -75,14 +75,15 @@
   .cast-member img:hover { /* Added hover effect to cast member images */
     transform: scale(1.05);
     transition: transform 0.3s ease;
-    filter: grayscale(0%); /* Removed grayscale effect on hover */
   }
 
   .cast-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    padding: 3rem
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .cast-member {
@@ -92,6 +93,8 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    max-width: 100%;
+
   }
 
   .cast-member img {
@@ -105,14 +108,41 @@
   }
 
   .cast-member h2 {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0.5rem 0 0.25rem;
     color: var(--text-color);
   }
   
   .cast-member p {
-    font-size: 12px;
+    font-size: 18px;
     margin: 0.25rem 0 0.25rem;
     color: var(--text-color);
     line-height: 1.5;
   }
+
+  .cast-rachel {
+    background-color:  pink;
+  }
+
+  .cast-monica {
+    background-color: rgb(202, 233, 218)
+  }
+
+  .cast-phoebe {
+    background-color: peachpuff
+  }
+
+  .cast-joey {
+    background-color: lightblue
+  }
+
+  .cast-chandler {
+    background-color: lavender
+  }
+
+  .cast-ross {
+    background-color: lightyellow
+  }
+
+  
+
