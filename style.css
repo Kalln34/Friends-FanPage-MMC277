@@ -3,11 +3,11 @@
 }
 
 :root {
-  --primary-color: #7d6ea5;
+  --primary-color: #3f1b9f;
   --text-style: 'Fredoka', sans-serif;
-  --text-color: #417660;
+  --text-color: #1f4e3b;
   --text-color-lighter: #699482;
-  --secondary-color:  #daac5e;
+  --secondary-color:  #eda01c;
 }
   
 .header {
@@ -256,12 +256,27 @@ font-style: italic;
   }
 
 
+  .matthew-image {
+    width: 500px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .matthew-image:hover {
+    transform: scale(.9);
+  }
+
+
+
+  /* iconic scenes page css */
   .resolution{
     background-color: lightblue;
     border: 1px solid #7d6ea5;
     padding: 10px;
     margin-top:10px;
     margin-bottom: 10px;
+    color: black;
+    font-size: 18px;
   }
 
   .ready{
@@ -296,6 +311,10 @@ font-style: italic;
 
   .container__thirdtitle{
     font-size: 20px;
+  }
+
+  .resolution img{
+    float: left;
   }
 
 
