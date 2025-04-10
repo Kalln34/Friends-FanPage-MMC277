@@ -3,11 +3,11 @@
 }
 
 :root {
-  --primary-color: #5031a5;
+  --primary-color: #3e16aa;
   --text-style: 'Fredoka', sans-serif;
   --text-color: #417660;
   --text-color-lighter: #699482;
-  --secondary-color:  #ce8e20;
+  --secondary-color:  #eda01c;
 }
   
 .header {
