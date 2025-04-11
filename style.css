@@ -275,8 +275,6 @@ font-style: italic;
     padding: 10px;
     margin-top:10px;
     margin-bottom: 10px;
-    color: black;
-    font-size: 18px;
   }
 
   .ready{
@@ -288,16 +286,15 @@ font-style: italic;
   }
 
   .cop {
-    background-color: #daac5e;
+    background-color: peachpuff;
     border: 1px solid #7d6ea5;
     padding: 10px;
     margin-top:10px;
     margin-bottom: 10px;
-    color: black;
   }
 
   .wedding {
-    background-color: lightgrey;
+    background-color: lavender;
     border: 1px solid #7d6ea5;
     padding: 10px;
     margin-top:10px;
@@ -313,8 +310,13 @@ font-style: italic;
     font-size: 20px;
   }
 
-  .resolution img{
-    float: left;
+  .scene-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
 
