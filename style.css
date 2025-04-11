@@ -76,7 +76,7 @@
   min-height: 100vh;
   font-family: var(--text-style);
   margin: 0px;
-  font-size: 24px;
+  font-size: 22px;
   color: var(--text-color);
 }
 
@@ -94,6 +94,7 @@
   font-size: 40px; 
   margin: 5px 0 2px;   
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .container__subtitle {  
@@ -132,35 +133,6 @@
 .button:hover {
   background-color: var(--primary-color);
   transform: scale(1.05);
-}
-
-.characters {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  overflow: hidden; 
-}
-
-.char-images{
-  Float: left;
-  width: 200px; 
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
-.content{
-  float: right;
-  overflow: hidden;
-  margin-left: 200px;
-}
-
-.description,
-.mem-scene {
-  margin-bottom: 10px;
-}
-
-.mem-scene {
-font-style: italic;
 }
 
 .footer {
@@ -204,7 +176,6 @@ font-style: italic;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     max-width: 100%;
-
   }
 
   .cast-member img {
@@ -254,6 +225,115 @@ font-style: italic;
     background-color: lightyellow
   }
 
-  
 
+  .matthew-image {
+    width: 500px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .matthew-image:hover {
+    transform: scale(.9);
+  }
+
+
+  /* iconic scenes page css */
+  .resolution{
+    background-color: lightblue;
+    border: 1px solid #7d6ea5;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+
+  .ready{
+    background-color: lightgoldenrodyellow;
+    border: 1px solid #7d6ea5;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+
+  .cop {
+    background-color: peachpuff;
+    border: 1px solid #7d6ea5;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+
+  .wedding {
+    background-color: lavender;
+    border: 1px solid #7d6ea5;
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  
+  .scenes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .container__thirdtitle{
+    font-size: 20px;
+  }
+
+  .scene-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+
+  @media screen and (max-width:980px) 
+    {
+      nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 40px;
+      }
+
+      main > section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: auto;
+    }
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+   }  
+      
+   
+.recurring {
+  background-color: var(--text-color-lighter);
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.description,
+.mem-scene {
+  margin: 7px 0px 10px;
+  color: white;
+  line-height: 1.3;
+  text-align: left;
+}
+  
+  @media  screen and (min-width: 400px) {
+}
 
