@@ -269,11 +269,6 @@
     margin-top:10px;
     margin-bottom: 10px;
   }
-  
-  .scenes{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
 
   .container__thirdtitle{
     font-size: 20px;
@@ -288,7 +283,45 @@
     margin: 0 auto;
   }
 
+  .episode {
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    max-width: 100%;
+  }
 
+  .episode p {
+    font-size: 18px;
+    margin: 0.25rem 0 0.25rem;
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+
+  .episode:hover { /* Added hover effect to cast member cards */
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
+  .scenes:hover { 
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 200px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; filter: 0.3s ease;
+    filter: grayscale(20%);
+  }
+
+  .episode h2 {
+    font-size: 25px;
+    margin: 0.5rem 0 0.25rem;
+    color: var(--text-color);
+  }
+  
 
   @media screen and (max-width:980px) 
     {
@@ -333,7 +366,3 @@
   line-height: 1.3;
   text-align: left;
 }
-  
-  @media  screen and (min-width: 400px) {
-}
-
