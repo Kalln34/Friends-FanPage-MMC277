@@ -225,6 +225,8 @@
   background-color: lightyellow
 }
 
+
+/* matthew perry tribute image */
 .matthew-image {
   width: 500px;
   border-radius: 8px;
@@ -235,6 +237,7 @@
   transform: scale(.9);
  }
 
+ s
 /* recurring characters page css */
 .recurring {
   background-color: var(--text-color-lighter);
