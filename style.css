@@ -302,7 +302,7 @@
 
 
 
-  @media screen and (max-width:980px) 
+  @media screen and (max-width:980px) {
       nav{
         display: flex;
         align-items: center;
@@ -325,7 +325,8 @@
       justify-content: center;
       flex-direction: column;
       padding: 20px;
-   }  
+    }
+  }
       
    
 .recurring {
@@ -346,6 +347,3 @@
   text-align: left;
 }
   
-  @media  screen and (min-width: 400px) {
-}
-
