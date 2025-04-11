@@ -135,35 +135,6 @@
   transform: scale(1.05);
 }
 
-.characters {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  overflow: hidden; 
-}
-
-.char-images{
-  Float: left;
-  width: 200px; 
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
-.content{
-  float: right;
-  overflow: hidden;
-  margin-left: 200px;
-}
-
-.description,
-.mem-scene {
-  margin-bottom: 10px;
-}
-
-.mem-scene {
-font-style: italic;
-}
-
 .footer {
   background-color: var(--primary-color);
   border-top: var(--secondary-color) 6px solid;
@@ -205,7 +176,6 @@ font-style: italic;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     max-width: 100%;
-
   }
 
   .cast-member img {
@@ -265,7 +235,6 @@ font-style: italic;
   .matthew-image:hover {
     transform: scale(.9);
   }
-
 
 
   /* iconic scenes page css */
@@ -346,5 +315,25 @@ font-style: italic;
       padding: 20px;
    }  
       
-      
-  }
+   
+.recurring {
+  background-color: var(--text-color-lighter);
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+
+.description,
+.mem-scene {
+  margin: 7px 0px 10px;
+  color: white;
+  line-height: 1.3;
+  text-align: left;
+}
+  
+  @media  screen and (min-width: 400px) {
+}
+
