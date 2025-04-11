@@ -225,6 +225,8 @@
   background-color: lightyellow
 }
 
+
+/* matthew perry tribute image */
 .matthew-image {
   width: 500px;
   border-radius: 8px;
@@ -235,6 +237,7 @@
   transform: scale(.9);
  }
 
+ s
 /* recurring characters page css */
 .recurring {
   background-color: var(--text-color-lighter);
@@ -253,10 +256,9 @@
   line-height: 1.3;
   text-align: left;
 }
-
-
-  /* iconic scenes page css */
-  .resolution{
+ 
+/* iconic scenes page css */
+   .resolution{
     background-color: lightblue;
     border: 1px solid #7d6ea5;
     padding: 10px;
@@ -290,18 +292,54 @@
 
   .container__thirdtitle{
     font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .scene-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
   }
 
+  .episode {
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    max-width: 100%;
+  }
 
+  .episode p {
+    font-size: 18px;
+    margin: 0.25rem 0 0.25rem;
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+
+  .episode:hover { /* hover effect to scenes */
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
+
+
+  .episode h2 {
+    font-size: 25px;
+    margin: 0.5rem 0 0.25rem;
+    color: var(--text-color);
+  }
+
+  .scenes {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: auto;
+    margin-bottom: 10px;
+  }
+  
 
   @media screen and (max-width:980px) {
       nav{
@@ -310,7 +348,6 @@
         justify-content: center;
         flex-direction: column;
         margin-top: 40px;
-      
       }
 
       main > section {
