@@ -237,7 +237,6 @@
   transform: scale(.9);
  }
 
- s
 /* recurring characters page css */
 .recurring {
   background-color: var(--text-color-lighter);
@@ -248,7 +247,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 100%;
 }
-  
+
+.recurring:hover { /* hover effect to scenes */
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
 .description,
 .mem-scene {
   margin: 7px 0px 10px;
@@ -256,7 +260,7 @@
   line-height: 1.3;
   text-align: left;
 }
- 
+
 /* iconic scenes page css */
    .resolution{
     background-color: lightblue;
@@ -367,21 +371,5 @@
   }
       
    
-.recurring {
-  background-color: var(--text-color-lighter);
-  border-radius: 20px;
-  padding: 15px;
-  text-align: center;
-  font-size: 18px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
-}
 
-.description,
-.mem-scene {
-  margin: 7px 0px 10px;
-  color: white;
-  line-height: 1.3;
-  text-align: left;
-}
   
