@@ -149,93 +149,110 @@
   transition: transform 0.3s ease;
 }
 
-  .cast-member:hover { /* Added hover effect to cast member cards */
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-  }
+.cast-member:hover { /* Added hover effect to cast member cards */
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
   
-  .cast-member img:hover { /* Added hover effect to cast member images */
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
+.cast-member img:hover { /* Added hover effect to cast member images */
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 
-  .cast-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  .cast-member {
-    background-color: var(--text-color-lighter);
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    max-width: 100%;
-  }
+.cast-member {
+  background-color: var(--text-color-lighter);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  max-width: 100%;
+ }
 
-  .cast-member img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-width: 200px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease; filter: 0.3s ease;
-    filter: grayscale(20%); /* Added grayscale effect to images */
-  }
+.cast-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 200px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; filter: 0.3s ease;
+  filter: grayscale(20%); /* Added grayscale effect to images */
+}
 
-  .cast-member h2 {
-    font-size: 20px;
-    margin: 0.5rem 0 0.25rem;
-    color: var(--text-color);
-  }
+.cast-member h2 {
+  font-size: 20px;
+  margin: 0.5rem 0 0.25rem;
+  color: var(--text-color);
+}
   
-  .cast-member p {
-    font-size: 18px;
-    margin: 0.25rem 0 0.25rem;
-    color: var(--text-color);
-    line-height: 1.5;
-  }
+.cast-member p {
+  font-size: 18px;
+  margin: 0.25rem 0 0.25rem;
+  color: var(--text-color);
+  line-height: 1.5;
+}
 
-  .cast-rachel {
-    background-color:  pink;
-  }
+.cast-rachel {
+  background-color:  pink;
+}
 
-  .cast-monica {
-    background-color: rgb(202, 233, 218)
-  }
+.cast-monica {
+  background-color: rgb(202, 233, 218)
+}
 
-  .cast-phoebe {
-    background-color: peachpuff
-  }
+.cast-phoebe {
+  background-color: peachpuff
+}
 
-  .cast-joey {
-    background-color: lightblue
-  }
+.cast-joey {
+  background-color: lightblue
+}
 
-  .cast-chandler {
-    background-color: lavender
-  }
+.cast-chandler {
+  background-color: lavender
+}
 
-  .cast-ross {
-    background-color: lightyellow
-  }
+.cast-ross {
+  background-color: lightyellow
+}
 
+.matthew-image {
+  width: 500px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
 
-  .matthew-image {
-    width: 500px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-  }
+.matthew-image:hover {
+  transform: scale(.9);
+ }
 
-  .matthew-image:hover {
-    transform: scale(.9);
-  }
-
+/* recurring characters page css */
+.recurring {
+  background-color: var(--text-color-lighter);
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+}
+  
+.description,
+.mem-scene {
+  margin: 7px 0px 10px;
+  color: white;
+  line-height: 1.3;
+  text-align: left;
+}
 
   /* iconic scenes page css */
   .resolution{
@@ -283,54 +300,16 @@
     margin: 0 auto;
   }
 
-  .episode {
-    border-radius: 20px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    max-width: 100%;
-  }
 
-  .episode p {
-    font-size: 18px;
-    margin: 0.25rem 0 0.25rem;
-    color: var(--text-color);
-    line-height: 1.5;
-  }
-
-  .episode:hover { /* Added hover effect to cast member cards */
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-  }
-
-  .scenes:hover { 
-    transform: scale(1.02);
-    transition: transform 0.3s ease;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    max-width: 200px;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease; filter: 0.3s ease;
-    filter: grayscale(20%);
-  }
-
-  .episode h2 {
-    font-size: 25px;
-    margin: 0.5rem 0 0.25rem;
-    color: var(--text-color);
-  }
-  
 
   @media screen and (max-width:980px) 
-    {
       nav{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         margin-top: 40px;
+      
       }
 
       main > section {
@@ -366,3 +345,7 @@
   line-height: 1.3;
   text-align: left;
 }
+  
+  @media  screen and (min-width: 400px) {
+}
+
